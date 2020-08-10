@@ -25,3 +25,44 @@ Libraries required
 #endif
 ```
 This system relies on iterations to adjust its trajectory, so you may have to make changes to the Servo calibration to adapt it to your system.
+
+## Aurora radio
+The radio system is built for NRF24L01 Arduino's modules, you can change it but you will need to change the programm
+Make sure your radio module can transmit more than minimum 500 meters
+
+Libraries required
+```c++
+#include <SPI.h>  
+#include "RF24.h"
+```
+
+## Aurora sensors
+The sensors used are BMP180 and MPU-6050.
+
+MPU-6050 is used in the TVC system too, he can transmit Gyro and Acc data.
+
+BMP180 can transmit Alt and Baro data.
+
+Libraries required
+```c++
+#include <SFE_BMP180.h>
+#include <Wire.h>
+#include "I2Cdev.h"
+#include "MPU6050.h"
+```
+
+## Aurora server
+The Aurora rocket got a web server to receive all the data and plot them.
+You need another Arduino board to do the radio receiver.
+
+The web server is built on Flask and SocketIO Python's modules
+
+Libraries required
+```python
+from flask_socketio import SocketIO, emit
+from flask import Flask, render_template, url_for, copy_current_request_context, send_file, request, jsonify, redirect
+from random import random
+from time import sleep
+from threading import Thread, Event
+import serial
+```
