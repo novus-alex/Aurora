@@ -8,7 +8,8 @@ So you will need Arduino software, if you want you can go to the dowload page [h
 Thanks to Teo, Trystan to help me in this project
 
 ## Aurora 3D files
-Those files was created on Fusion360, please comment if you want the Fusion360 files
+Those files was created on Fusion360.
+
 To print it, I used PLA basic (like Amazon Basic PLA, Nozzle Temp. 190-220°C and Bed Temp. 40-55°C)
 
 ## Aurora TVC
@@ -66,3 +67,29 @@ from time import sleep
 from threading import Thread, Event
 import serial
 ```
+
+## Aurora system
+The Aurora main system is built for Raspberry-pi (I got Raspberry-pi zero w for this project) in Python3.0 minimum.
+
+The Raspberry-pi is the manager of the 2 Arduino boards, he receive the datya from one of them and transmit to the other to optimize the job.
+
+You can change the Port, Baudrate and Timeout of the Arduino boards in the files Aurora_system/static/python/modules/args/args_worker1.txt and Aurora_system/static/python/modules/args/args_worker2.txt
+
+Libraries required
+```python
+from threading import Thread, Event
+import serial
+import serial.tools.list_ports
+import sys
+import os
+import time
+from random import *
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[Novus Space](https://novussapce.inovaperf.me/)
