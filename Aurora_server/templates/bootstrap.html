@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link href= "{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='fav/favicon.ico') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-div">
+      <div class="title">raspOne</div>
+      <div class="sub-title">BETA</div>
+      <div class="fields">
+          <form action="/data_update" method="post">
+            <div class="username"><input type="text" name="username" class="user-input" placeholder="username" /></div>
+            <div class="password"><input type="password" name="password" class="pass-input" placeholder="password" /></div>
+              <button class="signin-button"><input type="submit" value="Login" placeholder="Login"> </button>
+          </form>
+          <h1 class="info">{{info}}</h1>
+      </div>
+
+    </div>
+</body>
+</html>

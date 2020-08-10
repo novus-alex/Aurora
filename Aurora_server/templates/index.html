@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>raspOne Mission Control</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="static/js/charts.js"></script>
+    <script src="static/js/functions_app.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='fav/favicon.ico') }}">
+    <link href= "{{ url_for('static',filename='css/main.css') }}" rel="stylesheet">
+</head>
+<body class="bg">
+    <div class="title-global">
+        <p class="title">raspOne Mission Control</p>
+        <p class="company">Novus Space</p>
+        <p class="separator_bar"></p>
+    </div>
+    <div class="toolbar">
+        <a href="{{ url_for('cool_form') }}">Home</a>
+        <a href="#" class="old_data">Old Data</a>
+        <a href="#" class="graph">Data Graph</a>
+    </div>
+    <div class="data_visualizer">
+        <div class="data-frame" id="data-frame" onmouseover="this.style.borderColor='#22A2C2';" onmouseout="this.style.borderColor='#4b4b4b';" onclick="activate()">
+            <canvas width="175" height="50" class="chart_altimeter" id="chart_altimeter"></canvas>
+            <canvas width="175" height="50" class="chart_speed" id="chart_speed"></canvas>
+        </div>
+        <div class="info-frame" id="info-frame" onmouseover="this.style.borderColor='#22A2C2';" onmouseout="this.style.borderColor='#4b4b4b';" onclick="activate_info()">
+            <div class="status-state"></div>
+            <p class="info1" id="status-state1"></p>
+            <p class="info2" id="status-state2"></p>
+            <p class="info3" id="status-state3"></p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="time_gmt">
+            <i class="fa fa-clock-o"></i>
+            <span id="Antibes_z71f"></span>
+            <a href="https://time.is/Antibes" id="time_is_link" rel="nofollow">GMT+2</a>
+            <script src="//widget.time.is/t.js"></script>
+            <script>
+                time_is_widget.init({Antibes_z71f:{}});
+            </script>
+        </div>
+    </div>
+</body>
+</html>

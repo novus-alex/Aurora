@@ -1,0 +1,191 @@
+.bg {
+    background-color: #3b3b3b;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.title-global {
+    position: relative;
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	background: #1d1d1d;
+	width: 125%;
+	left: -15%;
+	height: 75px;
+	top: -50px;
+}
+
+.title {
+    position: relative;
+    top: 42.5px;
+    left: -825px;
+    text-align: center;
+}
+
+.company {
+    position: relative;
+    top: 7.5px;
+    left: -650px;
+    text-align: center;
+}
+
+.separator_bar {
+    position: relative;
+    left: 485px;
+    top: -23px;
+    height: 15px;
+    border-left: 1px solid ;
+    color: #fff;
+}
+
+.toolbar {
+    margin-top: -50px;
+    margin-left: -108px;
+    padding-top: 20px;
+    width: 110%;
+    height: 50px;
+    text-align: center;
+    background-color: #2b2b2b;
+}
+
+.toolbar a {
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.toolbar a:hover {
+    background: #4b4b4b;
+    transition-duration: 0.3s;
+}
+
+.data-frame {
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #fff;
+	background-color: #3b3b3b;
+	width: 45%;
+	height: 600px;
+	border-style: solid;
+	border-color: #4b4b4b;
+	border-width: 1px;
+}
+
+.data {
+    float: left;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #fff;
+    margin: 50px;
+    width:100px;
+    height: 50px;
+    padding: 60px 35px 35px 35px;
+    background: #2b2b2b;
+    box-shadow: 13px 13px 20px #242D6A,
+              -13px -13px 20px #242D6A;
+}
+
+.data-frame#data-frame.active {
+    box-shadow: 10px 20px 30px #2b2b2b;
+    border-color: #22A2C2;
+}
+
+.info-frame#info-frame.active {
+    box-shadow: 10px 20px 30px #2b2b2b;
+    border-color: #22A2C2;
+}
+
+.chart_altimeter {
+    padding-top: 75px;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+.chart_speed {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+.name-s1 {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -25px;
+}
+
+.log {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.info-frame {
+    position: relative;
+    top: -602.5px;
+    left: 915px;
+	width: 13.5%;
+	background-color: #3b3b3b;
+	border-style: solid;
+	border-color: #4b4b4b;
+	border-width: 1px;
+}
+
+.info-frame p {
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.info1 {
+    color: yellow;
+}
+
+.info2 {
+    color: green;
+}
+
+.info3 {
+    color: green;
+}
+
+.footer {
+    width: 125%;
+    height: 25px;
+    background-color: #000000;
+    color: #ccc;
+    position: fixed;
+    top: 915px;
+    left: -8px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.time_gmt {
+    position: fixed;
+    font-family: 'Noto Sans', sans-serif;
+    top: 917.5px;
+    left: 1810px;
+}
+
+.time_gmt a {
+    text-decoration: none;
+    color: #ccc;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+
