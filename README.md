@@ -71,7 +71,7 @@ import serial
 ## Aurora system
 The Aurora main system is built for Raspberry-pi (I got Raspberry-pi zero w for this project) in Python3.0 minimum.
 
-The Raspberry-pi is the manager of the 2 Arduino boards, he receive the datya from one of them and transmit to the other to optimize the job.
+The Raspberry-pi is the manager of the 2 Arduino boards, he receive the data from one of them and transmit to the other to optimize the work.
 
 You can change the Port, Baudrate and Timeout of the Arduino boards in the files Aurora_system/static/python/modules/args/args_worker1.txt and Aurora_system/static/python/modules/args/args_worker2.txt
 
