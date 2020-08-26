@@ -92,4 +92,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[Novus Space](https://novusspace.inovaperf.me/License.html)
+[Novus Space](https://novusspace.inovaperf.me/license)
