@@ -25,7 +25,7 @@ Libraries required
     #include "Wire.h"
 #endif
 ```
-This system relies on iterations to adjust its trajectory, so you may have to make changes to the Servo calibration to adapt it to your system.
+This system relies on iterations to adjust his trajectory, so you may have to make changes to the Servo calibration to adapt they to your system.
 
 ## Aurora radio
 The radio system is built for NRF24L01 Arduino's modules, you can change it but you will need to change the programm
