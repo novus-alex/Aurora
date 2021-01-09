@@ -1,5 +1,3 @@
-## Novus Space Aurora project
-
 # Aurora Rocket
 Aurora project, started in 2019.
 This project is based on self-learning to build an autonomous rocket.
